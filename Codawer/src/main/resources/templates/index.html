@@ -18,14 +18,28 @@
 					<th>Descricão</th>
 				</thead>
 				<tbody>
-					<tr>
-						<td>{{titulo}}</td>
-						<td>{{descricao}}</td>
+					<tr ng-repeat="dto in tarefa">
+						<td>{{dto.titulo}}</td>
+						<td>{{dto.descricao}}</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-	</div>	
+		<div class="row">
+			<div class="col-md-3">
+				<span>titulo</span> <input type="text" ng-model="tarefa.titulo"/>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<span>descricao</span> <textarea type="textarea" ng-model="tarefa.titulo"></textarea>
+				<button class="btn btn-sm" value="salvar"><i class="fa fa-save"></i> salvar</button>
+			</div>
+		</div>
+		
+	</div>
+	{{}}	
 </body>
 
 </html>
